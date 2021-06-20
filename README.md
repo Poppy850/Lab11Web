@@ -37,7 +37,8 @@ Kemudian buat folder template pada direktori view, lalu buat file header.php dan
 ![image](https://user-images.githubusercontent.com/85287196/122661583-bb92bc00-d140-11eb-9dc2-594696d79f25.png)
 
 Pertanyaan Tugas
-Lengkapi kode program untuk menu lainnya yang ada pada Controller Page, sehingga semua link pada navigasi header dapat menampilkan tampilan dengan layout yang sama.
+Lengkapi kode program untuk menu lainnya yang ada pada Controller Page, 
+sehingga semua link pada navigasi header dapat menampilkan tampilan dengan layout yang sama.
 ![image](https://user-images.githubusercontent.com/85287196/122661595-d402d680-d140-11eb-8596-2351a8105854.png)
 
 ![selamat datang halaman web](https://user-images.githubusercontent.com/85287196/122597347-154f9500-d020-11eb-98a6-76d7eb7b499b.png)
@@ -78,7 +79,8 @@ ketikaa di refresh akan muncul tampilan seperti ini.
 ![image](https://user-images.githubusercontent.com/85287196/122662146-8fc60500-d145-11eb-83d6-e96476b61fca.png)
 
 Membuat Tampilan Detail Artikel
-Tampilan pada saat judul berita di klik maka akan diarahkan ke halaman yang berbeda. Tambahkan sebuah fungsi baru pada Controller Artikel (/app/Controllers/Artikel.php) dengan nama view().
+Tampilan pada saat judul berita di klik maka akan diarahkan ke halaman yang berbeda. 
+Tambahkan sebuah fungsi baru pada Controller Artikel (/app/Controllers/Artikel.php) dengan nama view().
 ![image](https://user-images.githubusercontent.com/85287196/122662150-994f6d00-d145-11eb-9b02-f331fd228d07.png)
 
 Membuat View Detail
@@ -86,14 +88,17 @@ Buat file baru dalam folder artikel (/app/Views/artikel/) dengan nama detail.php
 ![image](https://user-images.githubusercontent.com/85287196/122662163-b6843b80-d145-11eb-961d-db51e0f21bfa.png)
 
 Membuat Route
-Buka file Routes.php dalam folder (/app/Config/) dan tambahkan routing untuk ke halaman detail artikel. $routes->get('/artikel/(:any)', 'Artikel::view/$1');
+Buka file Routes.php dalam folder (/app/Config/) dan 
+tambahkan routing untuk ke halaman detail artikel.
+$routes->get('/artikel/(:any)', 'Artikel::view/$1');
 ![image](https://user-images.githubusercontent.com/85287196/122662171-c6038480-d145-11eb-8b60-9fcefd9294a1.png)
 
 Maka akan tampil halaman dari artikel yang diklik. 
 ![image](https://user-images.githubusercontent.com/85287196/122662184-d4ea3700-d145-11eb-9a46-99c23b15555c.png)
 
 Membuat Menu Admin
-Menu admin adalah untuk proses CRUD data artikel. Buat method atau fungsi baru pada Controller Artikel dengan nama admin_index().
+Menu admin adalah untuk proses CRUD data artikel. 
+Buat method atau fungsi baru pada Controller Artikel dengan nama admin_index().
 ![image](https://user-images.githubusercontent.com/85287196/122662215-0ebb3d80-d146-11eb-808f-f9add2433d71.png)
 
 Kemudian buat file admin_index.php dalam folder (/app/Views/artikel/) untuk tampilan halaman admin. 
