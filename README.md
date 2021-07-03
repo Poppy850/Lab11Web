@@ -137,6 +137,63 @@ Pertanyaan dan Tugas
 Selesaikan programnya sesuai Langkah-langkah yang ada. Anda boleh melakukan improvisasi.
 Jawab : Saya Telah Menyelesaikan Program diatas dengan hingga semua berjalan dengan baik
 
+Lab11 Web. Pratikum 13
+Nama : Poppy Harandtika
+NIM : 311910687
+Kelas : TI.19.C1
+
+1. Persiapan
+Pastikan MySQL Server sudah dapat dijalankan melalui XAMPP.
+Langkah 2.
+Membuat Tabel User Login
+Masukan kode berikut pada database :
+![image](https://user-images.githubusercontent.com/85287196/124369019-34ebdd80-dc1c-11eb-9da8-5ae28b974588.png)
+
+Membuat Model User
+Buat file baru pada direktori app/Models dengan nama UserModel.php, seperti berikut :
+![image](https://user-images.githubusercontent.com/85287196/124369029-4c2acb00-dc1c-11eb-8904-ea26c5fdd724.png)
+
+Membuat Controller User
+Buat Controller baru dengan nama User.php pada direktori app/Controllers. kemudian tambahkan fungsi index() sebagai berikut :
+![image](https://user-images.githubusercontent.com/85287196/124369053-72506b00-dc1c-11eb-8de2-b7a3f00229b6.png)
+![image](https://user-images.githubusercontent.com/85287196/124369068-a7f55400-dc1c-11eb-8085-2371a13e7da2.png)
+
+Membuat View Login
+Buat direktori baru dengan nama user pada direktori app/views, kemudian buat file baru dengan nama login.php. Dengan Code :
+![image](https://user-images.githubusercontent.com/85287196/124369084-d1ae7b00-dc1c-11eb-8fe1-8ea8217df3e1.png)
+
+Membuat Database Seeder
+Buka CLI dan masukan kode "php spark make:seeder UserSeeder",
+Lalu buka file UserSeeder.php yang berada di lokasi direktori /app/Database/Seeds/UserSeeder.php kemudian isi dengan kode :
+![image](https://user-images.githubusercontent.com/85287196/124369097-06223700-dc1d-11eb-8261-d9cce97e7bf7.png)
+
+
+
+Menambahkan Auth Filter
+Selanjutnya membuat filer untuk halaman admin. Buat file baru dengan nama Auth.php pada direktori app/Filters. berikut :
+![image](https://user-images.githubusercontent.com/85287196/124369197-f820e600-dc1d-11eb-9d38-ee11d78429c0.png)
+
+buka file app/Config/Filters.php tambahkan kode berikut:
+![image](https://user-images.githubusercontent.com/85287196/124369203-08d15c00-dc1e-11eb-9761-c9c8349d765f.png)
+
+Selanjutnya buka file app/Config/Routes.php dan sesuaikan kode berikut :
+![image](https://user-images.githubusercontent.com/85287196/124369205-1686e180-dc1e-11eb-8f80-6108da405f84.png)
+
+
+
+
+Membuat Fungsi LOGOUT
+Tambahkan method logout pada Controller User seperti berikut :
+![image](https://user-images.githubusercontent.com/85287196/124369217-33231980-dc1e-11eb-9723-6fa0c44d355f.png)
+
+
+Pertanyaan dan Tugas
+Selesaikan programnya sesuai Langkah-langkah yang ada. Anda boleh melakukan improvisasi.
+Jawab : Saya Sudah menyelesaikan tugas sesuai dengan langkah-langkah sehingga dapat ddiselesaikan dengan baik
+
+
+
+
 
 
 
